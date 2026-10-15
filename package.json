@@ -5,7 +5,7 @@
   "description": "Pilot for the Claude, ChatGPT and human-review workflow.",
   "main": "src/taskStatus.js",
   "scripts": {
-    "test": "node --test test/"
+    "test": "node --test"
   },
   "engines": {
     "node": ">=20"
