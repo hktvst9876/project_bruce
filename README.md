@@ -12,6 +12,16 @@ Pilot repository for the Claude ↔ ChatGPT ↔ human collaboration workflow.
 3. ChatGPT reviews that exact commit independently.
 4. The human owner approves and merges. No AI approves its own work.
 
+## Run the tests
+
+Requires Node.js 20 or newer. There are no dependencies to install.
+
+```
+npm test
+```
+
+`src/taskStatus.js` encodes the charter's task statuses (Backlog → Ready → Building → Review → Awaiting human approval → Done, with a Changes requested loop) so tools can check a status move before making it.
+
 ## Data rules
 
 Low-sensitivity information only. No credentials, banking or client identifiers, statements or regulated data in code, issues, PRs or screenshots. Use synthetic examples for tests.
